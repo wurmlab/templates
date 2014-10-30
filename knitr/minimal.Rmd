@@ -1,0 +1,22 @@
+# A minimal R Markdown example
+
+I know the value of pi is `r pi`, and 2 times pi is `r 2*pi`.
+To compile me type: 
+
+    library(knitr); knit('minimal.Rmd')
+
+A _paragraph_ here. A code chunk below:
+
+```{r}
+1+1
+.4-.7+.3 # what? it is not zero!
+```
+
+Graphics work too
+
+
+```{r graphics, message=FALSE, fig.cap='A scatterplot of `cars`',
+      fig.width=4, fig.height=2, dev='pdf'}
+library(ggplot2)
+qplot(speed, dist, data = cars) + geom_smooth()
+```
