@@ -1,0 +1,67 @@
+#!/usr/bin/env ruby
+
+# TODO:
+#   In the line below and rename 'app' to the name of your app.
+require 'app'
+require 'optparse'
+
+# Specify command line interface.
+options = {}
+optspec = OptionParser.new do |opts|
+  # TODO:
+  #   Rename 'app' with the name of your app in the line below.
+  opts.banner = 'Usage: app [options] <file|directory>'
+
+  # Print help if invoked with '-h' or '--help'.
+  opts.on('-h', '--help', 'Print help.') do
+    puts opts
+    exit
+  end
+
+  # TODO:
+  #   Describe other options. It's advised to only collect the parsed options
+  #   in the 'options' Hash here, and not act on them.
+  #
+  # NOTE:
+  #   Options can be parsed as Integer, Float, Array, or String (default) as
+  #   per your requirement. All options need not have a short and a long form.
+  #   For example, -h is short form and --help is long form for help. Official
+  #   documentation has a good reference example:
+  #   http://ruby-doc.org/stdlib-2.2.0/libdoc/optparse/rdoc/OptionParser.html
+
+  # A yes/no option.
+  opts.on('--version') {|o| options[:version] = o}
+
+  # An option that takes a value.
+  opts.on('-n', '--name=NAME') {|o| options[:name] = o}
+end
+
+# Print help if no arguments given.
+if ARGV.empty?
+  puts optspec
+  exit
+end
+
+# Parse command line as per specification.
+begin
+  optspec.order!
+rescue OptionParser::InvalidOption => e
+  puts e
+  exit
+end
+
+# Remaining arguments on the command line can be accessed from ARGV array.
+#
+# If your app was invoked as "app -a -b -c ~/foo", ARGV will be ['~/foo'].
+files = ARGV.dup
+
+# Some options do not require the entire app to be initialised. For instance,
+# displaying version number.
+if options[:version]
+  puts App.version
+  exit
+end
+
+# Initialize app object with the parsed options, and run.
+app = App.new(files, options)
+app.run
