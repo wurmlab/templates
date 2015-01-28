@@ -1,6 +1,18 @@
-Template for simple Ruby scripts
---------------------------------
+Template for building command line application using Ruby
+---------------------------------------------------------
 
-1. Copy and rename this directory.
-2. Add dependencies in Gemfile.
-3. Run bundle install
+Getting Started
+===============
+
+Get the template.
+
+    $ git clone https://github.com/wurmlab/templates.git
+
+Generate application skeleton.
+
+    $ templates/rbgen <app_name> <app_namespace>
+
+Use.
+
+    $ gem install bundler # first time
+    $ bundle exec bin/<app_name>

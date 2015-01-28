@@ -20,7 +20,7 @@ DESC
   # gem
   s.files         = Dir['lib/**/*']
   s.files         = s.files + ['Gemfile', 'app.gemspec']
-  s.files         = s.files + ['README.mkd']
+  s.files         = s.files + ['README.md']
   s.require_paths = ['lib']
   s.executables   = ['app']
 end

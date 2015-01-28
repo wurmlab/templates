@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+if [ $# -lt 2 ]; then
+  echo "Usage: rbgen <app name> <namespace>"
+  exit
+fi
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+name=$1
+namespace=$2
+
+set -e
+set -x
+
+cp -r $DIR/ruby $name
+cd $name
+mv app.gemspec $name.gemspec
+mv bin/app bin/$name
+mv lib/app lib/$name
+mv lib/app.rb lib/$name.rb
+
+sed -i '' "s/app/$name/" $name.gemspec
+sed -i '' "s/app/$name/" bin/$name
+sed -i '' "s/app/$name/" lib/$name.rb
+sed -i '' "s/App/$namespace/" bin/$name
+sed -i '' "s/App/$namespace/" lib/$name.rb
+sed -i '' "s/App/$namespace/" lib/$name/componentA.rb
