@@ -8,9 +8,12 @@ Get the template.
 
     $ git clone https://github.com/wurmlab/templates.git
 
-Generate application skeleton.
+`cd` to directory in which you want to create your app. Then generate application skeleton.
 
-    $ templates/rbgen <app_name> <app_namespace>
+    $ path/to/templates/rbgen appname AppName
+
+For example: `~/gitstuff/templates/rbgen transcriptanalyser TranscriptAnalyser`
+
 
 Use.
 
