@@ -54,6 +54,14 @@ end
 #
 # If your app was invoked as "app -a -b -c ~/foo", ARGV will be ['~/foo'].
 files = ARGV.dup
+files.each do |file|
+  f = File.expand_path file
+  unless File.file?(f) && !File.zero?(f) && File.readable?(f)
+    puts "File '#{file}' not useable (does not exist or is not a file"
+    puts 'or is not readable or is empty).'
+    exit!
+  end
+end
 
 # Some options do not require the entire app to be initialised. For instance,
 # displaying version number.
