@@ -19,10 +19,13 @@ mv app.gemspec $name.gemspec
 mv bin/app bin/$name
 mv lib/app lib/$name
 mv lib/app.rb lib/$name.rb
+mv spec/app_spec.rb spec/"$name"_spec.rb
 
 sed -i '' "s/app/$name/" $name.gemspec
 sed -i '' "s/app/$name/" bin/$name
 sed -i '' "s/app/$name/" lib/$name.rb
+sed -i '' "s/app/$name/" spec/"$name"_spec.rb
 sed -i '' "s/App/$namespace/" bin/$name
 sed -i '' "s/App/$namespace/" lib/$name.rb
 sed -i '' "s/App/$namespace/" lib/$name/componentA.rb
+sed -i '' "s/app/$namespace/" spec/"$name"_spec.rb

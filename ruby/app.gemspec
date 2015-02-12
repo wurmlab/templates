@@ -16,6 +16,8 @@ DESC
 
   # dependencies
   #s.add_dependency('colorize',    '~> 0.7.5')
+  s.add_development_dependency('rake',     '~> 10.4', '>= 10.4.2')
+  s.add_development_dependency('minitest', '~> 5.5',  '>= 5.5.1')
 
   # gem
   s.files         = Dir['lib/**/*']
