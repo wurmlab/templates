@@ -1,15 +1,11 @@
 #!/usr/bin/env ruby
 
-# TODO:
-#   In the line below and rename 'app' to the name of your app.
 require 'app'
 require 'optparse'
 
 # Specify command line interface.
 options = {}
 optspec = OptionParser.new do |opts|
-  # TODO:
-  #   Rename 'app' with the name of your app in the line below.
   opts.banner = 'Usage: app [options] <file|directory>'
 
   # Print help if invoked with '-h' or '--help'.
