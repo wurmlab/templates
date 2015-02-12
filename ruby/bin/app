@@ -29,7 +29,7 @@ optspec = OptionParser.new do |opts|
   opts.on('--version') {|o| options[:version] = o}
 
   # An option that takes a value.
-  opts.on('-n', '--name=NAME') {|o| options[:name] = o}
+  opts.on('-o', '--out=NAME') {|o| options[:out] = o}
 end
 
 # Print help if no arguments given.
