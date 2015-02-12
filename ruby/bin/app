@@ -46,7 +46,7 @@ end
 begin
   optspec.order!
 rescue OptionParser::InvalidOption => e
-  puts e
+  STDERR.puts e
   exit
 end
 
@@ -57,8 +57,8 @@ files = ARGV.dup
 files.each do |file|
   f = File.expand_path file
   unless File.file?(f) && !File.zero?(f) && File.readable?(f)
-    puts "File '#{file}' not useable (does not exist or is not a file"
-    puts 'or is not readable or is empty).'
+    STDERR.puts "File '#{file}' not useable (does not exist or is not a file"
+    STDERR.puts 'or is not readable or is empty).'
     exit!
   end
 end
