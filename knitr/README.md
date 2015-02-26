@@ -6,6 +6,10 @@ In R:
     knit('minimal.Rmd')
 
 
+You can call this from the shell by typing:
+
+    Rscript -e "library(knitr); knit('minimal.Rmd')"
+    
 Then in shell use use standard markdown to pdf converter - e.g. 
 
     markdown-pdf minimal.md 
