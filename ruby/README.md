@@ -10,9 +10,9 @@ Get the template.
 
 `cd` to directory in which you want to create your app. Then generate application skeleton.
 
-    $ path/to/templates/rbgen appname AppName
+    $ path/to/templates/rbgen appname
 
-For example: `~/gitstuff/templates/rbgen transcriptanalyser TranscriptAnalyser`
+For example: `~/gitstuff/templates/rbgen transcript_analyser`
 
 
 Use.
