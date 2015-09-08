@@ -1,3 +1,5 @@
+require 'net/http'
+
 # NOTE:
 #   Big apps split their components across several files for maintanability.
 #   You should create such files in 'app/' folder. They can then be required
@@ -29,6 +31,20 @@ class App
   # Instance methods.
 
   def run
-    puts "Will process: #{files}, with the following options: #{options}."
+    out = File.open(options[:out], 'w') if options[:out]
+    out = STDOUT unless out
+
+    ids = File.readlines files[0]
+    ids.map!(&:chomp)
+    ids.each do |id|
+      uri = URI "http://www.uniprot.org/uniprot/#{id}.fasta"
+      res = Net::HTTP.get_response uri
+      if res.code != '200'
+        STDERR.puts "#{id} not found"
+        next
+      end
+      out.puts res.body
+    end
+    out.close
   end
 end

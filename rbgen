@@ -27,11 +27,11 @@ loc = File.dirname __FILE__
 
 # Where are the template files?  In a dir called ruby relative to the directory
 # this script is located in.
-src  = File.join loc, 'ruby'
+src = File.join loc, 'ruby'
 
 # Where should the template files go? In a dir named same as the app name
 # relative to the directory script is run from.
-dst  = File.expand_path name
+dst = File.expand_path name
 
 # Copy template files as it is.
 cp_r src, dst
