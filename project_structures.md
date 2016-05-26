@@ -12,7 +12,7 @@ Conventions:
 ```
 2016-04-14-bombus_variant_calling
 ├── data
-│   └── 2016-04-14-bombus_raw_28_samples
+│   ├── 2016-04-14-bombus_raw_28_samples
 │   │   ├── sample1.fq    #  could link to /data/SBCS-WurmLab/archive/db/genomic/reads/...                 
 │   │   ├── sample2.fq 
 │   │   ├── sample3.fq
