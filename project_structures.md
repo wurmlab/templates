@@ -21,11 +21,12 @@ Conventions include:
 │   │   ├── sample2.fq 
 │   │   ├── sample3.fq
 │   │   ├── bombus_genome.fa -> ~/db/genomic/B_terrestris/Bter20110317-genome.fa
-│   │   └── WHATIDID.txt  # list of ln -s or cp commands or human-readable instructions 
+│   │   └── WHATIDID.txt  # list of ln -s, cp or wget/curl commands 
 │   └── 2016-04-16-cleaned_reads
 │       ├── sample1.fq.gz   -> ../../results/2016-04-14-read_cleaning/results/sample1.clean.fq.gz
 │       ├── sample2.fq.gz   -> ../../results/2016-04-14-read_cleaning/results/sample2.clean.fq.gz
-│       └── sample3.fq.gz   -> ../../results/2016-04-14-read_cleaning/results/sample3.clean.fq.gz
+│       ├── sample3.fq.gz   -> ../../results/2016-04-14-read_cleaning/results/sample3.clean.fq.gz
+│       └── WHATIDID.txt  # just the ln -s commands.
 ├── results
 │   ├── 2016-04-14-read_cleaning
 │   │   ├── input        -> ../../data/2016-04-14-first_attempt
