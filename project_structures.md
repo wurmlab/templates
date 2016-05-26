@@ -1,10 +1,14 @@
 Conventions for project hierarchies
 =====
 
-Conventions: 
+Conventions include: 
 * key directory names begin with YYYY-MM-DD date, followed by camelCase or_underscore_delimited description
-* a new project starting today should begin as follows: 
-  2016-04-
+  For example,  a new project starting today should begin as follows: 2016-04-24-a_self_explanatory_name.
+* all subdirectory names should be self-explanatory
+* link to files when appropriate. this can save tons of space AND reduce ambiguity/risks
+* every `results` dir should contain a link to an `input` dir
+* every directory in which you did something should contain a `WHATIDID.txt` (or an equivalent ruby/perl/jupyter/R/knitR script) that contains all relevant commands. required to get from `input` to `results`.
+
 
 
 
