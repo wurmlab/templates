@@ -1,18 +1,10 @@
 Conventions for project hierarchies
 =====
 
-Conventions include: 
-* key directory names begin with YYYY-MM-DD date, followed by camelCase or_underscore_delimited description
-  For example,  a new project starting today should begin as follows: 2016-04-24-a_self_explanatory_name.
-* all subdirectory names should be self-explanatory
-* link to files when appropriate. this can save tons of space AND reduce ambiguity/risks
-* every `results` dir should contain a link to an `input` dir
-* every directory in which you did something should contain a `WHATIDID.txt` (or an equivalent ruby/perl/jupyter/R/knitR script) that contains all relevant commands. required to get from `input` to `results`.
+Best to just illustrate with an example.
 
+## Example: 
 
-
-
-### Example: 
 ```
 2016-04-14-bombus_variant_calling
 ├── data
@@ -29,7 +21,7 @@ Conventions include:
 │       └── WHATIDID.txt  # just the ln -s commands.
 ├── results
 │   ├── 2016-04-14-read_cleaning
-│   │   ├── input        -> ../../data/2016-04-14-first_attempt
+│   │   ├── input        -> ../../data/2016-04-14-bombus_raw_28_samples
 │   │   ├── results                                # only few files here
 │   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2/bin/
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
@@ -46,7 +38,19 @@ Conventions include:
     └── # links to other software if needed
 ```
 
-### Credit: 
+
+## Explicit (partial) conventions
+Conventions include: 
+* key directory names begin with YYYY-MM-DD date, followed by camelCase or_underscore_delimited description
+  For example,  a new project starting today should begin as follows: 2016-04-24-a_self_explanatory_name.
+* all subdirectory names should be self-explanatory
+* link to files when appropriate. this can save tons of space AND reduce ambiguity/risks
+* every `results` dir should contain a link to an `input` dir
+* every directory in which you did something should contain a `WHATIDID.txt` (or an equivalent ruby/perl/jupyter/R/knitR script) that contains all relevant commands. required to get from `input` to `results`.
+
+
+
+## Credit: 
 This was derived from [A Quick Guide to Organizing Computational Biology Projects](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) with input (a while ago) from others including Julien Roux.
 
 
