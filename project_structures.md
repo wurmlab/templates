@@ -13,8 +13,10 @@ Conventions:
 2016-04-14-bombus_variant_calling
 ├── data
 │   └── 2016-04-14-bombus_raw_28_samples
-│   │   ├──                                        # links to /data/SBCS-WurmLab/archive/db/genomic/...                 
-│   │   ├──                                        # other real files
+│   │   ├── sample1.fq    #  could link to /data/SBCS-WurmLab/archive/db/genomic/reads/...                 
+│   │   ├── sample2.fq 
+│   │   ├── sample3.fq
+│   │   ├── bombus_genome.fa -> ~/db/genomic/B_terrestris/Bter20110317-genome.fa
 │   │   └── WHATIDID.txt  # list of ln -s or cp commands or human-readable instructions 
 │   └── 2016-04-16-cleaned_reads
 │       ├── sample1.fq.gz   -> ../../results/2016-04-14-read_cleaning/results/sample1.clean.fq.gz
@@ -29,11 +31,10 @@ Conventions:
 │   │   └── WHATIDID.txt                           # or equivalent (knitr/jupyter)
 │   ├── 2016-04-16-mapping_to_reference
 │   │   ├── input        -> ../../data/2016-04-16-cleaned_reads
-│   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2
 │   │   ├── results                                # only few files here
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
 │   │   └── WHATIDID.txt                           # or equivalent (knitr/jupyter)
-│   └── WHATIDID.txt                               # for rationale or if multiple results directories
+│   └── WHATIDID.txt                               # for overall rationale
 └── soft
     ├── sratoolkit-2.4.2                           # if installed locally
     ├── bwa              -> /share/apps/sbcs/bwa/0.6.2/bin/bwa
