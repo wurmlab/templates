@@ -26,7 +26,7 @@ Conventions:
 │   ├── 2016-04-14-read_cleaning
 │   │   ├── input        -> ../../data/2016-04-14-first_attempt
 │   │   ├── results                                # only few files here
-│   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2
+│   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2/bin/
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
 │   │   └── WHATIDID.txt                           # or equivalent (knitr/jupyter)
 │   ├── 2016-04-16-mapping_to_reference
