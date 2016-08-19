@@ -47,7 +47,7 @@ Conventions include:
 * link to files when appropriate. this can save tons of space AND reduce ambiguity/risks
 * every `results` dir should contain a link to an `input` dir
 * every directory in which you did something should contain a `WHATIDID.txt` (or an equivalent ruby/perl/jupyter/R/knitR script) that contains all relevant commands. required to get from `input` to `results`.
-
+* once you have created an "input" (i.e. "data") folder, make it read-only because you don't want any accidental edits while you are running your analysis
 
 
 ## Credit: 
