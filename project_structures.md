@@ -25,12 +25,14 @@ Best to just illustrate with an example.
 │   │   ├── results                                # only few files here
 │   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2/bin/
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
-│   │   └── WHATIDID.txt                           # or equivalent (knitr/jupyter)
+|   |   ├── ENVIRONMENT.sh                         # if any particular software, modules or containers need to be loaded
+│   │   └── WHATIDID.txt                           # or equivalent .sh or .Rmd (or knitr/jupyter)
 │   ├── 2016-04-16-mapping_to_reference
 │   │   ├── input        -> ../../data/2016-04-16-cleaned_reads
 │   │   ├── results                                # only few files here
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
-│   │   └── WHATIDID.txt                           # or equivalent (knitr/jupyter)
+|   |   ├── ENVIRONMENT.sh                         # if any particular software, modules or containers need to be loaded
+│   │   └── WHATIDID.txt                           # or equivalent .sh or .Rmd (or knitr/jupyter)
 │   └── WHATIDID.txt                               # for overall rationale
 └── soft
     ├── sratoolkit-2.4.2                           # if installed locally
