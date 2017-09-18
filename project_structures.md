@@ -21,14 +21,14 @@ Best to just illustrate with an example.
 │       └── WHATIDID.txt  # just the ln -s commands.
 ├── results
 │   ├── 2016-04-14-read_cleaning
-│   │   ├── input        -> ../../data/2016-04-14-bombus_raw_28_samples
+│   │   ├── input        -> ../../input/2016-04-14-bombus_raw_28_samples
 │   │   ├── results                                # only few files here
 │   │   ├── sratoolkit   -> ../../soft/sratoolkit-2.4.2/bin/
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
 |   |   ├── ENVIRONMENT.sh                         # if any particular software, modules or containers need to be loaded
 │   │   └── WHATIDID.txt                           # or equivalent .sh or .Rmd (or knitr/jupyter)
 │   ├── 2016-04-16-mapping_to_reference
-│   │   ├── input        -> ../../data/2016-04-16-cleaned_reads
+│   │   ├── input        -> ../../input/2016-04-16-cleaned_reads
 │   │   ├── results                                # only few files here
 │   │   ├── tmp                                    # use real scratch dir if more appropriate
 |   |   ├── ENVIRONMENT.sh                         # if any particular software, modules or containers need to be loaded
