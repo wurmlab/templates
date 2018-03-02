@@ -51,6 +51,9 @@ Conventions include:
 * every directory in which you did something should contain a `WHATIDID.txt` (or an equivalent ruby/perl/jupyter/R/knitR script) that contains all relevant commands. required to get from `input` to `results`.
 * once you have created an "input" (i.e. "data") folder, make it read-only because you don't want any accidental edits while you are running your analysis
 
+## Other ideas
+* maybe `results` should be called `analysis`
+
 
 ## Credit: 
 This was derived from [A Quick Guide to Organizing Computational Biology Projects](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) with input (a while ago) from others including Julien Roux.
