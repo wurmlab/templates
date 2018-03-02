@@ -29,4 +29,4 @@ sequences in FASTA format.
 This template automatically takes input files as here: `bundle exec bin/appname input1.fq input2.fq`.
 
 Any string output like  `puts "ACAGTAGCAGTCAGC"` will display in standard output - thus output can be redirected with `>`.
-Errors (and logging info) should be displayed in standard error by `STDERR.puts "I did a great job.".
+Errors (and logging info) should be displayed in standard error by `STDERR.puts "I did a great job."`.
