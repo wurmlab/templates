@@ -1,6 +1,10 @@
 Templates
 ---------
 
+Project directory structure
+===========================
+See [project_structures.md](project_structures.md)
+
 Building command line application using Ruby
 ============================================
 
