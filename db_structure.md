@@ -23,6 +23,7 @@ Pheidole_pallidula
     |   ├── FASTQ_file_1_from_sequencing_center
     |   ├── FASTQ_file_2_from_sequencing_center
     |   ├── ...
+    |── SAMPLE_INFO.txt # how was the DNA extracted, etc.
     |── renamed # friendlier names
     |   ├── lane_1
     |   |   ├── sample1.R1.fastq.gz   -> ../lane_1/FASTQ_file_1_from_sequencing_center
@@ -53,3 +54,6 @@ Conventions include:
   * 4 letter abbreviation for species
   * sequencing platform
   * number of lanes
+* For what SAMPLE_INFO.txt should contain, consider the following two examples:
+  * /data/SBCS-WurmLab/archive/db/genomic/reads/Bombus_terrestris/SAMPLE_Information_Bter_batch_two_runs.txt
+  * /data/archive/archive-SBCS-WurmLab/db/genomic/reads/Pheidole_pallidula/2018-05-Pheidole-115workers-illumina-3lanes/Pheidole-pallidula_2018-05_genewiz_hiseq4000_3lanes_sample-info.txt
