@@ -14,29 +14,29 @@ Pheidole_pallidula
     ├── lane_1
     |   ├── FASTQ_file_1_from_sequencing_center
     |   ├── FASTQ_file_2_from_sequencing_center
-    |   ├── ...
+    |   └── ...
     ├── lane_2
     |   ├── FASTQ_file_1_from_sequencing_center
     |   ├── FASTQ_file_2_from_sequencing_center
-    |   ├── ...
+    |   └── ...
     ├── lane_3
     |   ├── FASTQ_file_1_from_sequencing_center
     |   ├── FASTQ_file_2_from_sequencing_center
-    |   ├── ...
-    |── SAMPLE_INFO.txt # how was the DNA extracted, etc.
+    |   └── ...
+    |── WHATIDID.txt # how was the DNA extracted, etc.
     |── renamed # friendlier names
     |   ├── lane_1
     |   |   ├── sample1.R1.fastq.gz   -> ../lane_1/FASTQ_file_1_from_sequencing_center
     |   |   ├── sample1.R2.fastq.gz   -> ../lane_1/FASTQ_file_2_from_sequencing_center
-    |   |   ├── ...
+    |   |   └── ...
     |   ├── lane_2
     |   |   ├── sample1.R1.fastq.gz   -> ../lane_2/FASTQ_file_1_from_sequencing_center
     |   |   ├── sample1.R2.fastq.gz   -> ../lane_2/FASTQ_file_2_from_sequencing_center
-    |   |   ├── ...
+    |   |   └── ...
     |   ├── lane_3
     |   |   ├── sample1.R1.fastq.gz   -> ../lane_3/FASTQ_file_1_from_sequencing_center
     |   |   ├── sample1.R2.fastq.gz   -> ../lane_3/FASTQ_file_2_from_sequencing_center
-    |   |   ├── ...
+    |   |   └── ...
     |   └── WHATIDID.txt # how were the links generated
     └── cleaned
         └── 2018-10-19-Ppal_reads_qc_for_asm
@@ -54,6 +54,7 @@ Conventions include:
   * 4 letter abbreviation for species
   * sequencing platform
   * number of lanes
-* For what SAMPLE_INFO.txt should contain, consider the following two examples:
+* What should the main WHATIDID.txt file contain? Consider the following two
+  examples:
   * /data/SBCS-WurmLab/archive/db/genomic/reads/Bombus_terrestris/SAMPLE_Information_Bter_batch_two_runs.txt
   * /data/archive/archive-SBCS-WurmLab/db/genomic/reads/Pheidole_pallidula/2018-05-Pheidole-115workers-illumina-3lanes/Pheidole-pallidula_2018-05_genewiz_hiseq4000_3lanes_sample-info.txt
