@@ -1,6 +1,12 @@
 Templates
 ---------
 
+Database structure
+==================
+Where to put reads, how to organise them?
+
+See [db_structure.md](db_structure.md)
+
 Project directory structure
 ===========================
 See [project_structures.md](project_structures.md)
