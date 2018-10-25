@@ -1,7 +1,7 @@
 # Conventions for organising sequenced reads
 
 Shared data, such as sequenced reads should be put in
-`/data/archive/archive-SBCS-WurmLab/db` (a.k.a db)
+`/data/archive/archive-SBCS-WurmLab/db` (a.k.a db).
 
 ## Genomic reads
 
@@ -51,7 +51,7 @@ Pheidole_pallidula
 ```
 
 Conventions include:
-* One directory per run of the sequencing machine.
+* One directory per run of the sequencing machine
 * Directory names begin with YYYY-MM-DD date, followed by _underscore_
   delimited description
 * Description should include the following information:
