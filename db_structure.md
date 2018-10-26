@@ -24,10 +24,12 @@ Pheidole_pallidula
     |       ├── FASTQ_file_1_from_sequencing_center.gz
     |       ├── FASTQ_file_2_from_sequencing_center.gz
     |       └── ...
-    |── WHATIDID.txt # how was the DNA extracted, etc.
-    |── raw_metadata # info about samples, barcodes, etc.
-    |   ├── sample_id.tsv
-    |   └── sample_cov.tsv
+    |── sample_info # details of library prepration, etc.
+    |   ├── library_prep.txt                 # required
+    |   ├── per_lane_fastqc/                 # optional
+    |   ├── per_sample_fastqc/               # optional
+    |   ├── per_sample_coverage.tsv          # good-to-have
+    |   └── other_relevant_info.txt|csv|tsv  # sample-id mapping, custom barcodes, etc.
     |── renamed # friendlier names
     |   ├── lane_1
     |   |   ├── sample1.R1.fastq.gz   -> ../raw/lane_1/FASTQ_file_1_from_sequencing_center.gz
@@ -46,6 +48,8 @@ Pheidole_pallidula
         └── 2018-10-19-Ppal_reads_qc_for_asm
             ├── sample1.R1.fastq.gz
             ├── sample1.R2.fastq.gz
+            ├── sample2.R1.fastq.gz
+            ├── sample2.R2.fastq.gz
             ├── ...
             └── WHATIDID.txt # how were the reads cleaned, which samples, etc.
 ```
@@ -61,7 +65,7 @@ Conventions include:
   * continent (can be more precise if sampled from a single location)
   * sequencing platform (prefer hiseq400 over illumina_hiseq400)
   * number of lanes
-* What should the main WHATIDID.txt file contain? Consider the following two
-  examples:
+* For sample_info/library_prep.txt, consider the following two examples:
   * /data/SBCS-WurmLab/archive/db/genomic/reads/Bombus_terrestris/SAMPLE_Information_Bter_batch_two_runs.txt
   * /data/archive/archive-SBCS-WurmLab/db/genomic/reads/Pheidole_pallidula/2018-05-Pheidole-115workers-illumina-3lanes/Pheidole-pallidula_2018-05_genewiz_hiseq4000_3lanes_sample-info.txt
+* sample_info directory should contain any other metadata as appropriate
