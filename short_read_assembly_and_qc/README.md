@@ -5,6 +5,13 @@ Date:  Friday, 9th November 2018
 
 Input: pool of 7 cleaned _Bombus lapidarius_ samples (9-11x)
 
+### Get input
+
+```
+mkdir input
+cp /data/SBCS-MSc-BioInf/2018/input_for_assembly_assignment/input3/*.fastq input
+```
+
 ### Run SPADES
 
 ```
@@ -73,9 +80,8 @@ mv tmp/run_scf tmp/busco_insecta
 
 C:99.6%[S:99.5%,D:0.1%],F:0.2%,M:0.2%,n:1658
 
-### Archive
+### Cleanup
 
 ```
-rm tmp/{contigs,scaffolds}.fasta
-tar cvzf tmp.tar.gz tmp
+rm -rf input tmp
 ```
